@@ -1,0 +1,5 @@
+{
+  "name": "PulseStream AI",
+  "description": "A real-time social media sentiment monitoring dashboard powered by Gemini. Visualize public opinion trends, track keyword sentiment live, and analyze incoming data streams with instant AI feedback.",
+  "requestFramePermissions": []
+}
