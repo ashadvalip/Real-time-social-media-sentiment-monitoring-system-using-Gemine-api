@@ -1,20 +1,78 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Real-Time Social Media Sentiment Monitoring
 
-# Run and deploy your AI Studio app
+A React + TypeScript application for monitoring social-media text and analyzing sentiment with the Gemini API.
 
-This contains everything you need to run your app locally.
+## Overview
 
-View your app in AI Studio: https://ai.studio/apps/drive/1vjmO8_AVAsMc45H2KWaAySNxWbbsVI5I
+The application provides a browser-based interface for sentiment analysis and monitoring workflows. API credentials are supplied locally through environment variables and are intentionally excluded from version control.
 
-## Run Locally
+## Tech stack
 
-**Prerequisites:**  Node.js
+- React
+- TypeScript
+- Vite
+- Gemini API
 
+## Getting started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- Node.js 18+
+- A Gemini API key
+
+### Installation
+
+```bash
+npm install
+```
+
+### Environment configuration
+
+Create a local `.env.local` file:
+
+```env
+VITE_GEMINI_API_KEY=your_gemini_api_key
+```
+
+Never commit real API keys to Git. The repository ignores local environment files.
+
+### Development
+
+```bash
+npm run dev
+```
+
+Then open the local URL printed by Vite.
+
+### Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Project structure
+
+```text
+.
+├── App.tsx
+├── index.tsx
+├── index.html
+├── package.json
+├── tsconfig.json
+├── tsconfig.node.json
+├── metadata.json
+└── README.md
+```
+
+## Security note
+
+API credentials belong in environment variables, secret managers, or deployment-platform secrets. Removing a secret file from the latest commit does not remove credentials from previous Git history; any previously committed key should be revoked and replaced.
+
+## Status
+
+Application repository under active development.
+
+## License
+
+No license is currently specified.
